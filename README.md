@@ -42,11 +42,14 @@ Estos documentos han de ser pasados a texto, separado el texto en valenciano del
 Con los textos legales se pueden seguir varias estrategias:
 * Dejarlos como están pero segmentados por párrafos en función de los token o otras características técnicas del proyecto.
 * Generar títulos en forma de preguntas que sean respondidas por cada párrafo. Esos títulos contendrán todo el contexto posible como el documento de origen y la sección del documento en la que se encuentran.
+* Generar resúmenes de todo el texto con modelos de lenguaje como mt5
+* Generar resúmenes de los párrafos con modelos más precisos de atención plena. 
 
 
 #### 3.1 Creación de baterías de preguntas y respuestas.
 
 Consideramos que, además de los textos legales, hay que hacer y responder muchas preguntas por parte de humanos. Esto ayudará a entender mejor los textos y a detectar las principales dudas de los alumnos y evaluadores.
+Generaremos preguntas a partir de los textos con modelos de lenguaje comerciales y serán respondidas por humanos expertos. 
 
 #### 3.2 Tokenización y vectorización
 
