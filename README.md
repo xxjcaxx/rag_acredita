@@ -28,8 +28,28 @@ Crear un sistema RAG que permita:
 
 El sistema estará compuesto por los siguientes componentes:
 
-* Extracción y Preprocesamiento de Documentos PDF
+* Extracción y Preprocesamiento de Documentos PDF y otros
 * Segmentación y Asignación de Títulos a los Párrafos
 * Vectorización y Almacenamiento en una Base de Datos Vectorial
 * Interfaz de Consulta
 
+### 3. Extracción y preprocesamiento de documentos PDF y otros.
+
+Se han conseguido todos los documentos que se han considerado relevantes de: https://gestoreducatiu.gva.es/va/ así como la documentación que poseemos sobre Acredita como son las órdenes y leyes y cursos para preparar a los evaluadores. Por otro lado, para tener esa información en otras palabras y resumida, se han buscado textos en foros y blogs que resultan relevantes a primera vista. 
+
+Estos documentos han de ser pasados a texto, separado el texto en valenciano del castellano y traducido al castellano en caso de que sea necesario. En este proceso se limpiarán de caracteres innecesarios y se segmentarán. 
+
+Con los textos legales se pueden seguir varias estrategias:
+* Dejarlos como están pero segmentados por párrafos en función de los token o otras características técnicas del proyecto.
+* Generar títulos en forma de preguntas que sean respondidas por cada párrafo. Esos títulos contendrán todo el contexto posible como el documento de origen y la sección del documento en la que se encuentran.
+
+
+#### 3.1 Creación de baterías de preguntas y respuestas.
+
+Consideramos que, además de los textos legales, hay que hacer y responder muchas preguntas por parte de humanos. Esto ayudará a entender mejor los textos y a detectar las principales dudas de los alumnos y evaluadores.
+
+#### 3.2 Tokenización y vectorización
+
+### 4. Almacenamiento en la base de datos vectorial
+
+### 5. Consulta del RAG
