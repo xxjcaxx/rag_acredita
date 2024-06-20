@@ -45,6 +45,10 @@ Con los textos legales se pueden seguir varias estrategias:
 * Generar resúmenes de todo el texto con modelos de lenguaje como mt5
 * Generar resúmenes de los párrafos con modelos más precisos de atención plena. 
 
+```bash
+pdftotext -layout 2014_7890.pdf - | gawk '{print substr($0, 79, 90)}' | sed 's/^ *//g' | sed ':a;N;$!ba;s/-\n//g'
+
+```
 
 #### 3.1 Creación de baterías de preguntas y respuestas.
 
